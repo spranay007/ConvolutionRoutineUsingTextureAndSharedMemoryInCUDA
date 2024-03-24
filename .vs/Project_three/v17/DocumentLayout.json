@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "E:\\College\\Multicore Gpu\\Project_three\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54C52E03-8FC5-477E-A7B4-82767D25AA49}|Project_one.vcxproj|E:\\College\\Multicore Gpu\\Project_three\\convolutionTexture_gold.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{54C52E03-8FC5-477E-A7B4-82767D25AA49}|Project_one.vcxproj|solutionrelative:convolutionTexture_gold.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{54C52E03-8FC5-477E-A7B4-82767D25AA49}|Project_one.vcxproj|E:\\College\\Multicore Gpu\\Project_three\\CONVOLUTIONTEXTURE_COMMON.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{54C52E03-8FC5-477E-A7B4-82767D25AA49}|Project_one.vcxproj|solutionrelative:CONVOLUTIONTEXTURE_COMMON.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54C52E03-8FC5-477E-A7B4-82767D25AA49}|Project_one.vcxproj|E:\\College\\Multicore Gpu\\Project_three\\convolutionTexture.cu||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{54C52E03-8FC5-477E-A7B4-82767D25AA49}|Project_one.vcxproj|solutionrelative:convolutionTexture.cu||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54C52E03-8FC5-477E-A7B4-82767D25AA49}|Project_one.vcxproj|E:\\COLLEGE\\MULTICORE GPU\\PROJECT_THREE\\CONVOLUTIONTEXTURE_COMMON.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{54C52E03-8FC5-477E-A7B4-82767D25AA49}|Project_one.vcxproj|solutionrelative:CONVOLUTIONTEXTURE_COMMON.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{54C52E03-8FC5-477E-A7B4-82767D25AA49}|Project_one.vcxproj|E:\\College\\Multicore Gpu\\Project_three\\projectThree.cpp||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{54C52E03-8FC5-477E-A7B4-82767D25AA49}|Project_one.vcxproj|solutionrelative:projectThree.cpp||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C52E03-8FC5-477E-A7B4-82767D25AA49}|Project_one.vcxproj|E:\\College\\Multicore Gpu\\Project_three\\convolutionTexture_gold.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{54C52E03-8FC5-477E-A7B4-82767D25AA49}|Project_one.vcxproj|solutionrelative:convolutionTexture_gold.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "convolutionTexture_gold.cpp",
               "DocumentMoniker": "E:\\College\\Multicore Gpu\\Project_three\\convolutionTexture_gold.cpp",
               "RelativeDocumentMoniker": "convolutionTexture_gold.cpp",
@@ -49,33 +49,33 @@
               "RelativeDocumentMoniker": "convolutionTexture.cu",
               "ToolTip": "E:\\College\\Multicore Gpu\\Project_three\\convolutionTexture.cu",
               "RelativeToolTip": "convolutionTexture.cu",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABWAAAA",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAAAHMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-03-23T08:25:33.176Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "convolutionTexture_common.h",
               "DocumentMoniker": "E:\\College\\Multicore Gpu\\Project_three\\convolutionTexture_common.h",
               "RelativeDocumentMoniker": "convolutionTexture_common.h",
               "ToolTip": "E:\\College\\Multicore Gpu\\Project_three\\convolutionTexture_common.h",
               "RelativeToolTip": "convolutionTexture_common.h",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAoAAABBAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACMAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-03-23T07:37:35.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "projectThree.cpp",
               "DocumentMoniker": "E:\\College\\Multicore Gpu\\Project_three\\projectThree.cpp",
               "RelativeDocumentMoniker": "projectThree.cpp",
               "ToolTip": "E:\\College\\Multicore Gpu\\Project_three\\projectThree.cpp",
               "RelativeToolTip": "projectThree.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGwAAAAWAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGwAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-03T10:43:14.477Z",
               "EditorCaption": ""

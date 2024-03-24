@@ -33,12 +33,8 @@
 // Convolution kernel size (the only parameter inlined in the code)
 ////////////////////////////////////////////////////////////////////////////////
 
-#define KERNEL_LENGTH_MAX 18
+#define KERNEL_LENGTH_MAX 100
 #define KERNEL_RADIUS_MAX (KERNEL_LENGTH_MAX/2) - 1
-
-
-//#define KERNEL_RADIUS dimK
-//#define KERNEL_LENGTH (2 * KERNEL_RADIUS + 1)
 
 
 ////////////////////////////////////////////////////////////////////////////////
