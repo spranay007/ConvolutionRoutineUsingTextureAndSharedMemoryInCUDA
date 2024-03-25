@@ -21,8 +21,10 @@ int main(int argc, char** argv) {
     cudaChannelFormatDesc floatTex = cudaCreateChannelDesc<float>();
 
     float* d_Output;
+    
     StopWatchInterface* hTimer = NULL;
-
+    float elapsedSeconds = 0;
+    float milliseconds = 0;
     printf("[%s] - Starting...\n", argv[0]);
 
     // Parse command-line arguments for image dimensions and kernel size
@@ -117,7 +119,21 @@ int main(int argc, char** argv) {
 
     // Stop timer
     sdkStopTimer(&hTimer);
-    printf("GPU convolution time: %f ms, %f Mpix/s\n", sdkGetTimerValue(&hTimer), dimX * dimY * 1e-6 / (0.001 * sdkGetTimerValue(&hTimer)));
+    milliseconds = sdkGetTimerValue(&hTimer);
+    printf("GPU convolution time: %f ms, %f Mpix/s\n", milliseconds, dimX * dimY * 1e-6 / (0.001 * milliseconds));
+
+    // Calculate total number of FLOPs for each kernel
+    // Each element-wise multiplication and addition counts as 2 FLOPs
+    int numFlopsPerElement = 2;
+    int numElements = dimX * dimY;
+    int numFlops = numFlopsPerElement * numElements * dimK; // Assuming dimK is the number of elements in the kernel
+    elapsedSeconds = milliseconds / 1000.0;
+    // Calculate GFLOPS
+    float gflops = (float)numFlops / (elapsedSeconds * 1.0e9f);
+
+    // Print GFLOPS
+    printf("GFLOPS: %.2f\n", gflops);
+
 
     // Copy GPU result back to host
     checkCudaErrors(cudaMemcpy(h_OutputGPU, d_Output, dimX * dimY * sizeof(float), cudaMemcpyDeviceToHost));
@@ -135,10 +151,14 @@ int main(int argc, char** argv) {
 
     for (unsigned int i = 0; i < dimX * dimY; i++) {
         sum += h_OutputCPU[i] * h_OutputCPU[i];
-        delta +=
-            (h_OutputGPU[i] - h_OutputCPU[i]) * (h_OutputGPU[i] - h_OutputCPU[i]);
+        delta += (h_OutputGPU[i] - h_OutputCPU[i]) * (h_OutputGPU[i] - h_OutputCPU[i]);
+        if (h_OutputGPU[i] != h_OutputCPU[i])
+        {
+//            cout << "failed at " << i << "!!" << endl;
+            //cout << "difference at " << i << "is : " << h_OutputGPU[i] - h_OutputCPU[i] <<endl;
+        }
     }
-
+    
     double L2norm = sqrt(delta / sum);
     printf("Relative L2 norm: %E\n", L2norm);
     /////////////////////////////////CPU Verification Code Ends////////////////////////////////////////////////
